@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    ArchApps
+ * @package     ArchApps_ContactFormAutoReply
+ * @copyright   Copyright 2016 ArchApps (https://archapps.io)
+ * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
+ */
+-->
+<config>
+    <modules>
+        <ArchApps_ContactFormAutoReply>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Contacts />
+            </depends>
+        </ArchApps_ContactFormAutoReply>
+    </modules>
+</config>

@@ -1,0 +1,37 @@
+<!--@subject We Have Received Your Message@-->
+<!--@vars
+{
+"var data.name":"Sender Name",
+"var data.email":"Sender Email",
+"var data.comment":"Form Comment",
+"var data.telephone":"Sender Telephone",
+}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <h2>
+                We Have Received Your Message!
+            </h2>
+
+            <p>
+                <strong>And will contact you as soon as possible!</strong>
+            </p>
+
+            <p>&nbsp;</p>
+            <p><strong>Name:</strong> {{var data.name}}</p>
+            <p><strong>Email:</strong> {{var data.email}}</p>
+            <p><strong>Telephone:</strong> {{var data.telephone}}</p>
+            <p><strong>Message You Wrote</strong>: {{var data.comment}}</p>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}

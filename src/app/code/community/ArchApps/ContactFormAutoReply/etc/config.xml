@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    ArchApps
+ * @package     ArchApps_ContactFormAutoReply
+ * @copyright   Copyright 2016 ArchApps (https://archapps.io)
+ * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
+ */
+-->
+<config>
+    <modules>
+        <ArchApps_ContactFormAutoReply>
+            <version>0.1.0</version>
+        </ArchApps_ContactFormAutoReply>
+    </modules>
+
+    <global>
+        <helpers>
+            <archapps_contactformautoreply>
+                <class>ArchApps_ContactFormAutoReply_Helper</class>
+            </archapps_contactformautoreply>
+        </helpers>
+
+        <models>
+            <archapps_contactformautoreply>
+                <class>ArchApps_ContactFormAutoReply_Model</class>
+            </archapps_contactformautoreply>
+        </models>
+
+        <template>
+            <email>
+                <contacts_autoreply_email_template translate="label">
+                    <file>contact_form_auto_reply.html</file>
+                    <label>Contact Form Auto Reply</label>
+                    <type>html</type>
+                </contacts_autoreply_email_template>
+            </email>
+        </template>
+    </global>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <archapps_contactformautoreply>
+                    <files>
+                        <default>ArchApps_ContactFormAutoReply.csv</default>
+                    </files>
+                </archapps_contactformautoreply>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <frontend>
+        <events>
+            <controller_action_postdispatch_contacts_index_post>
+                <observers>
+                    <archapps_contactformautoreply>
+                        <type>singleton</type>
+                        <method>sendAutoReplyEmail</method>
+                        <class>archapps_contactformautoreply/observer</class>
+                    </archapps_contactformautoreply>
+                </observers>
+            </controller_action_postdispatch_contacts_index_post>
+        </events>
+    </frontend>
+</config>

@@ -1,0 +1,4 @@
+src/app/code/community/ArchApps/ContactFormAutoReply/ app/code/community/ArchApps/ContactFormAutoReply/
+src/app/etc/modules/ArchApps_ContactFormAutoReply.xml app/etc/modules/ArchApps_ContactFormAutoReply.xml
+src/app/locale/en_US/ArchApps_ContactFormAutoReply.csv app/locale/en_US/ArchApps_ContactFormAutoReply.csv
+src/app/locale/en_US/template/email/contact_form_auto_reply.html app/locale/en_US/template/email/contact_form_auto_reply.html

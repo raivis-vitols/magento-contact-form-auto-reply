@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    ArchApps
+ * @package     ArchApps_ContactFormAutoReply
+ * @copyright   Copyright 2016 ArchApps (https://archapps.io)
+ * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
+ */
+-->
+<config>
+    <sections>
+        <contacts>
+            <groups>
+                <autoreply translate="label" module="archapps_contactformautoreply">
+                    <label>Auto Reply</label>
+                    <sort_order>300</sort_order>
+                    <show_in_store>1</show_in_store>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <frontend_type>text</frontend_type>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enable Auto Reply</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                            <show_in_default>1</show_in_default>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled>
+
+                        <email_sender translate="label">
+                            <label>Email Sender</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                            <show_in_default>1</show_in_default>
+                            <depends><enabled>1</enabled></depends>
+                            <source_model>adminhtml/system_config_source_email_identity</source_model>
+                        </email_sender>
+
+                        <email_template translate="label">
+                            <label>Email Template</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                            <show_in_default>1</show_in_default>
+                            <depends><enabled>1</enabled></depends>
+                            <source_model>adminhtml/system_config_source_email_template</source_model>
+                        </email_template>
+                    </fields>
+                </autoreply>
+            </groups>
+        </contacts>
+    </sections>
+</config>
