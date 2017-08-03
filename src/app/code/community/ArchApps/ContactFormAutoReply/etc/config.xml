@@ -3,13 +3,14 @@
 /**
  * @category    ArchApps
  * @package     ArchApps_ContactFormAutoReply
+ * @author      Raivis Vitols <raivis.vitols@raivis.com>
  * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
  */
 -->
 <config>
     <modules>
         <ArchApps_ContactFormAutoReply>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
         </ArchApps_ContactFormAutoReply>
     </modules>
 

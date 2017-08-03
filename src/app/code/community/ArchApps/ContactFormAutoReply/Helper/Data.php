@@ -2,6 +2,7 @@
 /**
  * @category    ArchApps
  * @package     ArchApps_ContactFormAutoReply
+ * @author      Raivis Vitols <raivis.vitols@raivis.com>
  * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
  */
 
