@@ -22,6 +22,6 @@ Magento Community: 1.7.x - 1.9.x, Magento Enterprise: 1.12.x - 1.14.x
 
 Navigate to "System -> Configuration -> General -> Contacts" and open "Auto Reply" section. Set "Enable Auto Reply" configuration field value to "Yes", select "Email Sender" and "Email Template" and save the changes. From now on, each customer reaching you via contact form will receive automatic response message.
 
-## Modifying Email Template
+---
 
 Extension developed by [Raivis Vitols](https://raivis.com/).
