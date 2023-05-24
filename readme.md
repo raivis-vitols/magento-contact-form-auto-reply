@@ -1,7 +1,5 @@
 # Contact Form Auto Reply Extension for Magento
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/raivis-vitols/magento-contact-form-auto-reply/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/raivis-vitols/magento-contact-form-auto-reply/?branch=master)
-
 Contact Form Auto Reply extension for Magento extends default contact form functionality by sending an automatic reply to each customer reaching you via contact form.
 
 ![Screenshot](http://i.imgur.com/DAyssNr.png)
